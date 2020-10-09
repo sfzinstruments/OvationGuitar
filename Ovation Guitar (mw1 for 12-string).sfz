@@ -1,0 +1,63 @@
+// Ovation Guitar
+//
+// Converted from the original GigaSampler version by S. Christian Collins
+// www.schristiancollins.com
+//
+// Use mod wheel (CC1) to switch between 6-string (CC1 = 0) and 12-string (CC1 = 127) guitars.
+
+<control>
+default_path=samples/
+label_cc1=Layer XFade
+
+<global>
+ampeg_release=0.3
+
+<region> sample=oe1.wav   key=52  lokey=48
+<region> sample=oe2.wav   key=53
+<region> sample=oe3.wav   key=54
+<region> sample=oe4.wav   key=55
+<region> sample=oe5.wav   key=56
+<region> sample=oa1.wav   key=57
+<region> sample=oa2.wav   key=58
+<region> sample=oa3.wav   key=59
+<region> sample=oa4.wav   key=60
+<region> sample=oa5.wav   key=61
+<region> sample=od1.wav   key=62
+<region> sample=od2.wav   key=63
+<region> sample=od3.wav   key=64
+<region> sample=od4.wav   key=65
+<region> sample=od5.wav   key=66
+<region> sample=og1.wav   key=67
+<region> sample=og2.wav   key=68
+<region> sample=og3.wav   key=69
+<region> sample=og4.wav   key=70
+<region> sample=ob1.wav   key=71
+<region> sample=ob2.wav   key=72
+<region> sample=ob3.wav   key=73
+<region> sample=ob4.wav   key=74
+<region> sample=ob5.wav   key=75
+<region> sample=ohe1.wav  key=76
+<region> sample=ohe2.wav  key=77
+<region> sample=ohe3.wav  key=78
+<region> sample=ohe4.wav  key=79
+<region> sample=ohe5.wav  key=80
+<region> sample=ohe6.wav  key=81
+<region> sample=ohe7.wav  key=82
+<region> sample=ohe8.wav  key=83  hikey=88
+
+
+<group> amplitude_oncc1=100
+<region> sample=ohe1.wav  lokey=48  hikey=52  pitch_keycenter=52  volume=-15  tune=5
+<region> sample=ohe1.wav  lokey=53  hikey=57  pitch_keycenter=52  volume=-15
+<region> sample=ob1.wav   lokey=58  hikey=61  pitch_keycenter=59
+<region> sample=ob1.wav   lokey=62  hikey=62  pitch_keycenter=59  tune=5
+<region> sample=ohe1.wav  lokey=63  hikey=67  pitch_keycenter=64  tune=5
+<region> sample=ohe1.wav  lokey=68  hikey=70  pitch_keycenter=64
+<region> sample=ohe1.wav  lokey=71  hikey=74  pitch_keycenter=76
+<region> sample=ob2.wav   lokey=75  hikey=75  pitch_keycenter=72
+<region> sample=ob1.wav   lokey=76  hikey=76  pitch_keycenter=71
+<region> sample=ob2.wav   lokey=77  hikey=79  pitch_keycenter=72
+<region> sample=ohe1.wav  lokey=80  hikey=82  pitch_keycenter=76
+<region> sample=ohe4.wav  lokey=83  hikey=85  pitch_keycenter=79
+<region> sample=ohe5.wav  lokey=86  hikey=87  pitch_keycenter=80
+<region> sample=ohe7.wav  lokey=88  hikey=88  pitch_keycenter=82
